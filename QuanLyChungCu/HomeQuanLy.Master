@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeQuanLy.master.cs" Inherits="QuanLyChungCu.HomeQuanLy" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: "Nunito Sans", sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #f4f4f4; /* Màu xám nhạt */
+            color: #333; /* Màu chữ đen */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #form1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            background-color: #333; /* Màu nền đen */
+            color: white; /* Màu chữ trắng */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            color: azure;
+            font-size: 20px;
+        }
+
+        header .logo i {
+            margin-left: 50px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu .menu_listitem {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu .menu_listitem:hover {
+            color: #f39c12;
+        }
+
+        .menuright {
+            display: flex;
+            align-items: center;
+        }
+
+        .out-taikhoan .login {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .out-taikhoan .login:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+        <a href="FormAdmin.aspx" class="logo"><i class="fa-solid fa-house-user"></i> P House ADMIN</a>
+            <div class="menu">
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink2" runat="server" NavigateUrl="~/AdminQLTaiKhoan.aspx">Quản lý tài khoản</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink3" runat="server" NavigateUrl="~/AdminQLHoGD.aspx">Hộ Gia Đình</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink4" runat="server" NavigateUrl="~/AdminCanHo.aspx">Căn Hộ</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink5" runat="server" NavigateUrl="~/AdminDichVu.aspx">Dịch Vụ</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink7" runat="server" NavigateUrl="~/AdminThongBao.aspx">Thông Báo</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink6" runat="server" NavigateUrl="~/AdminPhanHoi.aspx">Phản Hồi</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink8" runat="server" NavigateUrl="~/AdminHoaDon.aspx">Hóa Đơn</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_listitem" ID="HyperLink9" runat="server" NavigateUrl="~/AdminThongKe.aspx">Thống Kê</asp:HyperLink>
+            </div>
+            <div class="menuright">
+                <div class="out-taikhoan">
+                     <asp:LinkButton ID="btnlogin" CssClass="login" runat="server" OnClick="btnlogin_Click">Login</asp:LinkButton>
+                </div>
+            </div>    
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

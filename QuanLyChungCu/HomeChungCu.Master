@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeChungCu.master.cs" Inherits="QuanLyChungCu.HomeChungCu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="StyleHomeChungCu.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <a href="Default.aspx" class="logo"><i class="fa-solid fa-house-user"></i>P House</a>
+            <div class="menu">
+                <asp:HyperLink CssClass="menu_button" ID="HyperLink1" runat="server" NavigateUrl="~/CCFormGioiThieu.aspx">GIỚI THIỆU</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_button" ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">CĂN HỘ</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_button" ID="HyperLink3" runat="server" NavigateUrl="~/CCFormDichVu.aspx">DỊCH VỤ</asp:HyperLink>
+                <asp:HyperLink CssClass="menu_button" ID="HyperLink7" runat="server" NavigateUrl="~/CCFormTTCaNhan.aspx">THÔNG TIN CÁ NHÂN</asp:HyperLink>
+            </div>
+            <div class="menuright">
+                <div class="out-taikhoan">
+                    <asp:LinkButton ID="btnlogin" CssClass="login" runat="server" OnClick="btnlogin_Click">Login</asp:LinkButton>
+                </div>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

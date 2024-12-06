@@ -1,0 +1,61 @@
+﻿body {
+    background-color: #f4f4f4; /* Màu xám nhạt */
+    color: #333; /* Màu chữ đen */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+
+header .logo i {
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu .menu_button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu .menu_button:hover {
+    color: #f39c12;
+}
+
+.menuright {
+    display: flex;
+    align-items: center;
+}
+
+.out-taikhoan .login {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.out-taikhoan .login:hover {
+    background-color: #777;
+}
