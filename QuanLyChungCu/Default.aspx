@@ -75,7 +75,7 @@
 
     /* Search bar styling */
     .in-timkiem {
-        margin-bottom: 20px;
+        margin: 20px 0;
         display: flex;
         justify-content: center;
         gap: 10px;

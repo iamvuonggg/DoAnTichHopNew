@@ -20,13 +20,12 @@
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
             height: 100vh;
             padding: 20px;
         }
 
         .left {
-            width: 48%;
+            width: 35%;
             height: 680px;
             display: flex;
             flex-direction: column;
@@ -35,11 +34,11 @@
         }
 
         .right {
-            width: 48%;
-            height: 680px;
+            width: 45%;
+            height: 600px;
             font-size: 20px;
             color: #555;
-            padding: 10px;
+            padding: 20px;
             background-color: #f9f9f9; 
             border-radius: 8px;
             display: flex;
@@ -50,8 +49,8 @@
 
         .left_img {
             width: 100%;
-            max-width: 500px;
-            height: 700px;
+            max-width: 400px;
+            height: 600px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }

@@ -74,7 +74,8 @@
         .container_box_input .nhap_box {
             width: 80%;
             height: 30px;
-            border: none; 
+            border: none;
+            font-size: 20px;
             border-bottom: 2px solid black; 
             outline: none;
             padding: 5px 0;

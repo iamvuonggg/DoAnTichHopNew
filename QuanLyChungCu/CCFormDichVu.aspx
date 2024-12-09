@@ -17,6 +17,7 @@
             flex-direction: column;
             align-items: center;
             width: 300px;
+            gap: 20px;
             padding: 15px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
@@ -27,6 +28,7 @@
             width: 100%;
             max-width: 460px;
             height: 400px;
+            margin-left: 20px;
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 10px;
